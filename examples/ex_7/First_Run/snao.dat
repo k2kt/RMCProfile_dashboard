@@ -1,0 +1,66 @@
+TITLE :: SrNb_0.5Al_0.5O_3
+MATERIAL :: SrNb_0.5Al_0.5O_3
+TEMPERATURE :: 300 K
+INVESTIGATOR :: Igor Levin
+
+NUMBER_DENSITY ::   0.08482231 Angstrom^(-3)
+MINIMUM_DISTANCES ::  3.60 2.9 3.1 2.0 5.0 3.50 1.82 5.0 1.70 2.1   Angstrom
+MAXIMUM_MOVES ::   0.05 0.05 0.05 0.05  Angstrom
+R_SPACING ::  0.0100 Angstrom
+PRINT_PERIOD :: 10000
+TIME_LIMIT ::     0.00 MINUTES
+SAVE_PERIOD ::  0.00 MINUTES
+ATOMS :: Sr Nb Al O 
+
+INPUT_CONFIGURATION_FORMAT ::  rmc6f
+SAVE_CONFIGURATION_FORMAT  ::  cfg
+
+BOX_SIZE :: 16 16 16
+
+NEUTRON_REAL_SPACE_DATA :: 1
+ > FILENAME :: pdf_03305gr.txt
+ > DATA_TYPE :: G(r)
+ > FIT_TYPE :: G(r)
+ > START_POINT :: 165
+ > END_POINT :: 2000
+ > CONSTANT_OFFSET ::   0
+ > NEUTRON_COEFFICIENTS :: 0.01971216 0.019807632  0.009684792  0.097768944 
+                           0.004975892  0.004865849   0.049121234
+                           0.00118956   0.024017456
+                            0.121229312  
+ > WEIGHT ::  0.162407E-01
+ > NO_FITTED_OFFSET
+
+EXAFS ::
+ > FILENAME ::Nb_EXAFS(k).dat
+ > TYPE(S)_OF_ABSORBING_ATOMS :: 2
+ > START_POINT_(k_space) :: 2.1
+ > END_POINT_(k_space) :: 13.3
+ > FIT_space :: r
+ > START_POINT_(r_space) :: 0.25
+ > END_POINT_(r_space) :: 4.1
+ > R_SPACING :: 0.01
+ > K_POWER :: 2
+ > ENERGY_OFFSET :: 1.9
+ > WEIGHT ::  0.189566E+04
+
+EXAFS ::
+ > FILENAME ::Sr_EXAFS(k).dat
+ > TYPE(S)_OF_ABSORBING_ATOMS :: 1
+ > START_POINT_(k_space) :: 2.5
+ > END_POINT_(k_space) :: 14.2
+ > Fit_space :: r
+ > START_POINT_(r_space) :: 1.0
+ > END_POINT_(r_space) :: 3.8
+ > R_SPACING :: 0.01
+ > K_POWER :: 2
+ > ENERGY_OFFSET :: 1.9
+ > WEIGHT :: 0.189566E+04
+
+LEFT_TAILS :: 
+  > START_STOP :: 1.69 2.0
+  > PARTIAL :: 9
+  > COEFFICIENTS :: 0 47.06  1.88   0.02717
+  > WEIGHT :: 0.1E+04
+
+END ::

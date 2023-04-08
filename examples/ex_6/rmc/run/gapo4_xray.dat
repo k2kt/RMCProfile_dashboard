@@ -1,0 +1,49 @@
+TITLE :: GaPO4 RT a-quartz structure
+MATERIAL :: GaPO4
+PHASE :: quartz phase
+TEMPERATURE :: RT
+PRESSURE :: RP
+DATA_NOTE :: set of example files for tutorial
+RMC_NOTE :: tutorial example: not necessarily the best fit!
+INVESTIGATOR :: Helen
+
+NUMBER_DENSITY ::   0.07764 Angstrom^(-3)
+MINIMUM_DISTANCES ::   1.319  1.319  1.319  1.319  1.319  1.319 Angstrom
+MAXIMUM_MOVES ::   0.020  0.020  0.020 Angstrom
+R_SPACING ::  0.0200 Angstrom
+PRINT_PERIOD :: 100
+TIME_LIMIT ::  0.0 MINUTES
+SAVE_PERIOD :: 0.0   MINUTES
+
+INPUT_CONFIGURATION_FORMAT ::  rmc6f
+SAVE_CONFIGURATION_FORMAT  ::  rmc6f
+
+ATOMS :: Ga P O
+
+IGNORE_HISTORY_FILE ::
+
+FLAGS ::
+  > NO_MOVEOUT
+  > NO_SAVE_CONFIGURATIONS
+  > NO_RESOLUTION_CONVOLUTION
+
+BRAGG :: 
+  > BRAGG_SHAPE :: xray2                   %% Which peak profile to use
+  > SUPERCELL :: 4 4 2
+  > RECALCULATE
+  > WEIGHT ::   1000.0
+
+XRAY_RECIPROCAL_SPACE_DATA ::
+  > FILENAME :: gapo4_xray_rmc.fq
+  > DATA_TYPE :: F(Q)
+  > FIT_TYPE :: F(Q)
+  > NO_FITTED_SCALE
+  > CONVOLVE ::
+  > RECIPROCAL_SPACE_FIT :: 1 1000 1
+  > RECIPROCAL_SPACE_PARAMETERS :: 1 1000 0.01
+  > REAL_SPACE_FIT :: 1 1500 1
+  > REAL_SPACE_PARAMETERS :: 1 1500 0.01
+  
+POLYHEDRAL_RESTRAINT :: 5
+  
+END ::

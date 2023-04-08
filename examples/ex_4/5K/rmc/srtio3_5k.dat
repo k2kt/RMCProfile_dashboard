@@ -1,0 +1,55 @@
+TITLE :: SrTiO3 5K
+MATERIAL :: SrTiO3
+PHASE :: tetragonal
+TEMPERATURE :: 5K
+INVESTIGATOR :: Matt
+
+NUMBER_DENSITY ::   0.08452333 Angstrom^(-3)
+MINIMUM_DISTANCES ::   3.7 3.1 2.50 3.7 1.68 2.50 Angstrom
+MAXIMUM_MOVES ::   0.05 0.05 0.1 Angstrom
+R_SPACING ::  0.0200 Angstrom
+PRINT_PERIOD :: 100
+TIME_LIMIT ::     10.00 MINUTES
+SAVE_PERIOD ::   0.20 MINUTES
+
+INPUT_CONFIGURATION_FORMAT ::  rmc6f
+SAVE_CONFIGURATION_FORMAT  ::  rmc6f
+
+ATOMS :: Sr Ti O
+
+FLAGS ::
+  > NO_MOVEOUT
+  > NO_SAVE_CONFIGURATIONS
+  > NO_RESOLUTION_CONVOLUTION
+  
+NEUTRON_REAL_SPACE_DATA :: 1
+  > FILENAME :: srtio3_wk_5k_rmc.gr
+  > DATA_TYPE :: G(r)
+  > FIT_TYPE :: G(r)
+  > START_POINT :: 1
+  > END_POINT :: 1500
+  > CONSTANT_OFFSET ::   0.0000
+  > WEIGHT ::   0.0100
+  > NO_FITTED_SCALE
+
+NEUTRON_RECIPROCAL_SPACE_DATA :: 1
+  > FILENAME :: srtio3_wk_5k_rmc.fq
+  > DATA_TYPE :: F(Q) 
+  > FIT_TYPE ::  F(Q)
+  > START_POINT :: 1
+  > END_POINT :: 3000
+  > CONSTANT_OFFSET ::   0.0000
+  > WEIGHT ::   0.0100
+  > NO_FITTED_OFFSET
+  > NO_FITTED_SCALE
+  > CONVOLVE ::
+
+BRAGG :: 
+  > BRAGG_SHAPE :: gsas2                   %% Which peakprofile to use
+  > SUPERCELL ::  6 6 4
+  > RECALCULATE
+  > DMIN :: 0.5
+  > WEIGHT ::   0.0100
+
+END ::
+

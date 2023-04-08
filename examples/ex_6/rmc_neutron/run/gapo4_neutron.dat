@@ -1,0 +1,68 @@
+TITLE :: GaPO4 RT a-quartz structure
+MATERIAL :: GaPO4
+PHASE :: quartz phase
+TEMPERATURE :: RT
+PRESSURE :: RP
+DATA_NOTE :: set of example files for tutorial
+RMC_NOTE :: tutorial example
+INVESTIGATOR :: Helen
+
+NUMBER_DENSITY ::   0.07764 Angstrom^(-3)
+MINIMUM_DISTANCES ::   2.694 2.694 1.709 2.694 1.397 2.339 Angstrom
+MAXIMUM_MOVES ::   0.020  0.020  0.020 Angstrom
+R_SPACING ::  0.0100 Angstrom
+PRINT_PERIOD :: 1000
+TIME_LIMIT ::  0.0 MINUTES
+SAVE_PERIOD :: 0.0   MINUTES
+
+INPUT_CONFIGURATION_FORMAT ::  cfg
+SAVE_CONFIGURATION_FORMAT  ::  cfg
+
+ATOMS :: Ga P O
+
+IGNORE_HISTORY_FILE ::
+
+FLAGS ::
+  > NO_MOVEOUT
+  > NO_SAVE_CONFIGURATIONS
+  > NO_RESOLUTION_CONVOLUTION
+
+NEUTRON_REAL_SPACE_DATA :: 
+  > FILENAME :: GaPO4_600uamps_rmc_35_t.gr
+  > DATA_TYPE :: G(r)
+  > FIT_TYPE :: T(r)
+  > START_POINT :: 1
+  > END_POINT :: 2000
+  > CONSTANT_OFFSET ::   0.0000
+  > WEIGHT ::   0.0100
+  > FITTED_SCALE 
+  > NO_FITTED_OFFSET
+  
+NEUTRON_RECIPROCAL_SPACE_DATA ::
+  > FILENAME :: GaPO4_600uamps_rmc_35_t.fq
+  > DATA_TYPE :: F(Q)
+  > FIT_TYPE :: F(Q)
+  > START_POINT :: 1
+  > END_POINT :: 1698
+  > CONSTANT_OFFSET ::   0.0000
+  > WEIGHT ::   0.0100
+  > NO_FITTED_OFFSET
+  > FITTED_SCALE
+  > CONVOLVE ::
+  
+BRAGG :: 
+  > BRAGG_SHAPE :: gsas3                   %% Which peak profile to use
+  > SUPERCELL :: 4 4 2
+  > RECALCULATE
+  > DMIN :: 0.6
+  > WEIGHT ::   0.05
+  
+POLYHEDRAL_RESTRAINT :: 5
+  
+END ::
+
+DISTANCE_WINDOW ::
+  > MNDIST :: 0 0 1.709 0 1.397 2.339
+  > MXDIST :: 0 0 1.981 0 1.639 2.714
+
+

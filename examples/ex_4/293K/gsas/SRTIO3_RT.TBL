@@ -1,0 +1,67 @@
+1exit                                                               PUBTABLE Version MacOSX Jun 23 22:10:51 2012 Page   1
+
+
+                   |-----------------------------------------|
+                   |     Program PUBTABLES Version MacOSX    |
+                   |  Generate crystal structure data tables |
+                   | Distributed on Mon Jun 18 10:37:03 2012 |
+                   |-----------------------------------------|
+
+        |---------------------------------------------------------------|
+        |            Allen C. Larson and Robert B. Von Dreele           |
+        |      Manuel Lujan, Jr. Neutron Scattering Center, MS-H805     |
+        |      Los Alamos National Laboratory, Los Alamos, NM  87545    |
+        |                                                               |
+        | Copyright, 2000, The Regents of the University of California. |
+        |---------------------------------------------------------------|
+
+ GENLES was run on Jun 18 23:15:37 2012    Total cycles run 141
+
+ The Current Least-Squares controls are
+
+ Maximum number of cycles is    3
+ Marquardt factor for matrix inversion =  1.00
+ Convergence for Sum(shift/esd)**2 less than   0.01
+ I/SigI cut-off is  1.00
+
+
+ Anisotropic thermal factors are defined by
+   T = exp(h**2*astr**2*u11+... +2*h*k*astr*bstr*u12+... )
+
+
+ Space group P m -3 m            
+ The lattice is centric   primitive cubic         Laue symmetry m3m   
+  Multiplicity of a general site is  48
+  The symmetry of the point 0,0,0 contains 1bar
+
+ The equivalent positions are:
+
+ ( 1)     X      Y      Z  ( 2)     Z      X      Y  ( 3)     Y      Z      X 
+ ( 4)     X      Y     -Z  ( 5)    -Z      X      Y  ( 6)     Y     -Z      X 
+ ( 7)    -Z      X     -Y  ( 8)    -Y     -Z      X  ( 9)     Y     -Z     -X 
+ (10)    -X      Y     -Z  (11)    -Z     -X      Y  (12)     X     -Y     -Z 
+ (13)     Y      X      Z  (14)     Z      Y      X  (15)     X      Z      Y 
+ (16)     Y      X     -Z  (17)    -Z      Y      X  (18)     X     -Z      Y 
+ (19)    -Z      Y     -X  (20)    -X     -Z      Y  (21)     X     -Z     -Y 
+ (22)    -Y      X     -Z  (23)    -Z     -Y      X  (24)     Y     -X     -Z 
+ 
+ The CMT file for this cycle was not found.
+
+
+ Lattice constants are 
+  a =  3.906531(10)  b = A  c = A 
+  Alpha =  90     Beta =  90    Gamma =  90   
+ Cell volume = 59.61751(26)
+1exit                                                               PUBTABLE Version MacOSX Jun 23 22:10:51 2012 Page   2
+
+
+  Name         X             Y             Z         Ui/Ue*100    Site sym Mult Type Seq Fractn
+  Sr       0.000000      0.000000      0.000000       0.50           M3M     1   SR    1 1.0000      
+  Ti       0.500000      0.500000      0.500000       0.33           M3M     1   TI    2 1.0000      
+  O        0.000000      0.500000      0.500000       0.62*       4/MMM100   3   O     3 1.0000      
+
+ Thermal parameters multiplied by 100.0 are
+  Name        U11          U22          U33          U12          U13          U23
+  Sr        0.50         0.50         0.50         0.00         0.00         0.00        
+  Ti        0.33         0.33         0.33         0.00         0.00         0.00        
+  O         0.25         0.81         0.81         0.00         0.00         0.00        

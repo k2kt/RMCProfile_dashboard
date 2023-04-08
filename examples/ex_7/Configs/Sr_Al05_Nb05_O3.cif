@@ -1,0 +1,108 @@
+#####################################################################
+#
+# Data extracted from the CRYSTMET database via the CrystalWorks 
+# system developed and maintained by the STFC Chemical Database Service
+# at Daresbury
+#
+# The CRYSTMET collection code is 547005
+#
+#
+# Database specific statement:
+#
+#               Toth Information Systems Inc.
+#
+# This CIF has been generated from an entry in the CRYSTMET
+# Toth retains rights to the data
+#
+#
+# Bulk downloading of CIF information from the CDS/DL server by 
+# any means is specifically forbidden
+#
+#####################################################################
+data_547005-CRYSTMET
+_journal_volume 49
+_journal_page_first 11362
+_journal_name_full 'Inorganic Chemistry'
+_journal_year 2010
+loop_
+_publ_author_name
+H. Iwakura, H. Einaga, Y. Teraoka
+_chemical_formula_moiety
+;
+Sr Nb0.5 Al0.5 O3
+;
+_chemical_name_systematic
+;
+,
+;
+_cell_length_a     3.896
+_cell_length_b     3.896
+_cell_length_c     3.896
+_cell_angle_alpha    90.000
+_cell_angle_beta    90.000
+_cell_angle_gamma    90.000
+_symmetry_Int_tables_number 221
+loop_
+_symmetry_equiv_pos_site_id
+_symmetry_equiv_pos_as_xyz
+  1 X,Y,Z
+  2 X,-Y,-Z
+  3 X,-Y,Z
+  4 -Z,-Y,X
+  5 Z,-Y,X
+  6 -Y,X,-Z
+  7 -Y,X,Z
+  8 -Y,-Z,X
+  9 -Y,Z,X
+ 10 X,-Z,-Y
+ 11 X,-Z,Y
+ 12 X,Z,-Y
+ 13 X,Z,Y
+ 14 -Z,X,-Y
+ 15 -Z,X,Y
+ 16 Z,X,-Y
+ 17 Z,X,Y
+ 18 Y,X,-Z
+ 19 Y,X,Z
+ 20 Y,-Z,X
+ 21 Y,Z,X
+ 22 X,Y,-Z
+ 23 -Z,Y,X
+ 24 Z,Y,X
+ 25 -X,-Y,-Z
+ 26 -X,Y,Z
+ 27 -X,Y,-Z
+ 28 Z,Y,-X
+ 29 -Z,Y,-X
+ 30 Y,-X,Z
+ 31 Y,-X,-Z
+ 32 Y,Z,-X
+ 33 Y,-Z,-X
+ 34 -X,Z,Y
+ 35 -X,Z,-Y
+ 36 -X,-Z,Y
+ 37 -X,-Z,-Y
+ 38 Z,-X,Y
+ 39 Z,-X,-Y
+ 40 -Z,-X,Y
+ 41 -Z,-X,-Y
+ 42 -Y,-X,Z
+ 43 -Y,-X,-Z
+ 44 -Y,Z,-X
+ 45 -Y,-Z,-X
+ 46 -X,-Y,Z
+ 47 Z,-Y,-X
+ 48 -Z,-Y,-X
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_symmetry_multiplicity
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_occupancy
+Al    AL   1   0.00000   0.00000   0.00000   0.00507   0.50000
+Nb    NB   1   0.00000   0.00000   0.00000   0.00507   0.50000
+O     O    3   0.50000   0.00000   0.00000   0.01051   1.00000
+Sr    SR   1   0.50000   0.50000   0.50000   0.00925   1.00000

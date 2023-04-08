@@ -1,0 +1,118 @@
+1exit                                                               PUBTABLE Version MacOSX Jun 19 12:17:26 2012 Page   1
+
+
+                   |-----------------------------------------|
+                   |     Program PUBTABLES Version MacOSX    |
+                   |  Generate crystal structure data tables |
+                   | Distributed on Mon Jun 18 10:37:03 2012 |
+                   |-----------------------------------------|
+
+        |---------------------------------------------------------------|
+        |            Allen C. Larson and Robert B. Von Dreele           |
+        |      Manuel Lujan, Jr. Neutron Scattering Center, MS-H805     |
+        |      Los Alamos National Laboratory, Los Alamos, NM  87545    |
+        |                                                               |
+        | Copyright, 2000, The Regents of the University of California. |
+        |---------------------------------------------------------------|
+
+ GENLES was run on Jun 19 12:17:19 2012    Total cycles run 104
+
+ The Current Least-Squares controls are
+
+ Maximum number of cycles is    3
+ I/SigI cut-off is  1.00
+
+
+ Anisotropic thermal factors are defined by
+   T = exp(h**2*astr**2*u11+... +2*h*k*astr*bstr*u12+... )
+
+
+ Space group I 4/m c m           
+ The lattice is centric  I-centered tetragonal    Laue symmetry 4/mmm 
+  Multiplicity of a general site is  32
+  The symmetry of the point 0,0,0 contains 1bar
+
+ The equivalent positions are:
+
+ ( 1)     X      Y      Z  ( 2)    -Y      X      Z 
+ ( 3)    -X     -Y      Z  ( 4)     Y     -X      Z 
+ ( 5)    -X      Y  1/2+Z  ( 6)    -Y     -X  1/2+Z 
+ ( 7)     X     -Y  1/2+Z  ( 8)     Y      X  1/2+Z 
+ 
+
+ Lattice constants are 
+  a =  5.51166(11)  b = A  c =  7.80464(29) 
+  Alpha =  90     Beta =  90    Gamma =  90   
+ Cell volume = 237.093(11)
+
+  Name         X             Y             Z         Ui/Ue*100    Site sym Mult Type Seq Fractn
+  TI1      0.000000      0.000000      0.000000       0.21        4/M(001)   4   TI    1 1.0000      
+  O2       0.000000      0.000000      0.250000       0.66*       422(001)   4   O     2 1.0000      
+  O3       0.24157(5)    0.25843(5)    0.000000       0.27*       MM2(+-0)   8   O     3 1.0000      
+  SR4      0.500000      0.000000      0.250000       0.21        -42M 001   4   SR    4 1.0000      
+
+ Thermal parameters multiplied by 100.0 are
+  Name        U11          U22          U33          U12          U13          U23
+  TI1       0.21         0.21         0.21         0.00         0.00         0.00        
+  O2        0.97         0.97         0.05         0.00         0.00         0.00        
+  O3        0.38         0.38         0.06         0.01         0.00         0.00        
+  SR4       0.21         0.21         0.21         0.00         0.00         0.00        
+1exit                                                               PUBTABLE Version MacOSX Jun 23 17:00:43 2012 Page   1
+
+
+                   |-----------------------------------------|
+                   |     Program PUBTABLES Version MacOSX    |
+                   |  Generate crystal structure data tables |
+                   | Distributed on Mon Jun 18 10:37:03 2012 |
+                   |-----------------------------------------|
+
+        |---------------------------------------------------------------|
+        |            Allen C. Larson and Robert B. Von Dreele           |
+        |      Manuel Lujan, Jr. Neutron Scattering Center, MS-H805     |
+        |      Los Alamos National Laboratory, Los Alamos, NM  87545    |
+        |                                                               |
+        | Copyright, 2000, The Regents of the University of California. |
+        |---------------------------------------------------------------|
+
+ GENLES was run on Jun 19 12:17:19 2012    Total cycles run 104
+
+ The Current Least-Squares controls are
+
+ Maximum number of cycles is    3
+ I/SigI cut-off is  1.00
+
+
+ Anisotropic thermal factors are defined by
+   T = exp(h**2*astr**2*u11+... +2*h*k*astr*bstr*u12+... )
+
+
+ Space group I 4/m c m           
+ The lattice is centric  I-centered tetragonal    Laue symmetry 4/mmm 
+  Multiplicity of a general site is  32
+  The symmetry of the point 0,0,0 contains 1bar
+
+ The equivalent positions are:
+
+ ( 1)     X      Y      Z  ( 2)    -Y      X      Z 
+ ( 3)    -X     -Y      Z  ( 4)     Y     -X      Z 
+ ( 5)    -X      Y  1/2+Z  ( 6)    -Y     -X  1/2+Z 
+ ( 7)     X     -Y  1/2+Z  ( 8)     Y      X  1/2+Z 
+ 
+
+ Lattice constants are 
+  a =  5.51166(11)  b = A  c =  7.80464(29) 
+  Alpha =  90     Beta =  90    Gamma =  90   
+ Cell volume = 237.093(11)
+
+  Name         X             Y             Z         Ui/Ue*100    Site sym Mult Type Seq Fractn
+  TI1      0.000000      0.000000      0.000000       0.21        4/M(001)   4   TI    1 1.0000      
+  O2       0.000000      0.000000      0.250000       0.66*       422(001)   4   O     2 1.0000      
+  O3       0.24157(5)    0.25843(5)    0.000000       0.27*       MM2(+-0)   8   O     3 1.0000      
+  SR4      0.500000      0.000000      0.250000       0.21        -42M 001   4   SR    4 1.0000      
+
+ Thermal parameters multiplied by 100.0 are
+  Name        U11          U22          U33          U12          U13          U23
+  TI1       0.21         0.21         0.21         0.00         0.00         0.00        
+  O2        0.97         0.97         0.05         0.00         0.00         0.00        
+  O3        0.38         0.38         0.06         0.01         0.00         0.00        
+  SR4       0.21         0.21         0.21         0.00         0.00         0.00        

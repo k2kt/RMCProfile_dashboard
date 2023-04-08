@@ -1,0 +1,6 @@
+snao ! stem name
+2  ! total number of experimental spectra
+Nb		                    ! Chemical symbol of absorber for the 1st spectrum
+4.2  0.0      4.2  0.0        4.2  5.0         4.2  0.0
+Sr ! Chemical symbol of absorber for the 2nd spectrum
+4.2  0.0      4.0  0.0        4.2  0.0         4.2  0.0
