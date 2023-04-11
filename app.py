@@ -3,7 +3,7 @@ import io
 import dash
 from dash import html, dcc
 import dash_bio as dashbio
-from dash.dependencies import Input, Output
+from dash.dependencies import Input, Output, State
 from dash_bio.utils import xyz_reader
 
 app = dash.Dash(__name__)
@@ -38,7 +38,11 @@ app.layout = html.Div([
             value='default'
         ),
     ], style={'margin': '10px'}),
-    html.Div(id='output')
+    dcc.Loading(
+        id="loading-output",
+        type="cube",
+        children=html.Div(id="output")
+    ),
 ])
 
 @app.callback(Output('output', 'children'),
