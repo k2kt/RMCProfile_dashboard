@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
+ <author>k2kt</author>
  <class>MainWindow</class>
  <widget class="QMainWindow" name="MainWindow">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>970</width>
-    <height>600</height>
+    <width>1123</width>
+    <height>680</height>
    </rect>
   </property>
   <property name="maximumSize">
@@ -82,8 +83,8 @@ background-color: #F1F1F1;
 
 
 
-#frm_slect_b QPushButton{
-	border-radius: 20px;
+#frm_select_b QPushButton{
+	border-radius: 30px;
 	color: #F1F1F1;
 	padding: -5px
 
@@ -91,7 +92,7 @@ background-color: #F1F1F1;
 
 #frm_select_b QPushButton:hover{
 	border-radius: 20px;
-color: #F1F1F1;
+color: rgb(14, 14, 14);
     background-color: #FFF;
     border: 2px solid #F1F1F1;
 	padding: -5px
@@ -126,6 +127,12 @@ color: #F1F1F1;
 color: #F1F1F1;
     border: 2px solid #F1F1F1;
 	padding: -5px
+}
+
+#line{
+	style: doted;
+    background-color: #F1F1F1;
+	padding: 1px
 }
 
 
@@ -272,10 +279,22 @@ color: #F1F1F1;
           <item>
            <widget class="QPushButton" name="pushButton_6">
             <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>200</width>
+              <height>200</height>
+             </size>
             </property>
             <property name="sizeIncrement">
              <size>
@@ -294,6 +313,12 @@ color: #F1F1F1;
               <family>Nova_Flat</family>
               <pointsize>13</pointsize>
              </font>
+            </property>
+            <property name="mouseTracking">
+             <bool>false</bool>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
             </property>
             <property name="text">
              <string>Select dilectory...</string>
@@ -396,7 +421,7 @@ color: #F1F1F1;
          <property name="frameShadow">
           <enum>QFrame::Raised</enum>
          </property>
-         <layout class="QVBoxLayout" name="verticalLayout_11" stretch="0,0,0,0,0,0,0,0">
+         <layout class="QVBoxLayout" name="verticalLayout_11" stretch="0,0,0,0,0,0,0">
           <property name="spacing">
            <number>0</number>
           </property>
@@ -444,16 +469,6 @@ color: #F1F1F1;
             </property>
             <property name="text">
              <string>View logs</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="Line" name="line">
-            <property name="lineWidth">
-             <number>8</number>
-            </property>
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
             </property>
            </widget>
           </item>
@@ -638,6 +653,9 @@ color: #F1F1F1;
               <width>40</width>
               <height>40</height>
              </size>
+            </property>
+            <property name="cursor">
+             <cursorShape>ArrowCursor</cursorShape>
             </property>
             <property name="text">
              <string/>
@@ -888,6 +906,21 @@ color: #F1F1F1;
             </property>
             <widget class="QWidget" name="pg_current">
              <layout class="QVBoxLayout" name="verticalLayout_6">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>12</number>
+              </property>
+              <property name="topMargin">
+               <number>12</number>
+              </property>
+              <property name="rightMargin">
+               <number>12</number>
+              </property>
+              <property name="bottomMargin">
+               <number>12</number>
+              </property>
               <item alignment="Qt::AlignTop">
                <widget class="QFrame" name="frm_current_l">
                 <property name="frameShape">
@@ -916,12 +949,27 @@ color: #F1F1F1;
                </widget>
               </item>
               <item>
-               <widget class="QFrame" name="frm_current_g">
+               <widget class="QGraphicsView" name="graphicsView"/>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame">
                 <property name="sizePolicy">
-                 <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
                   <horstretch>0</horstretch>
                   <verstretch>0</verstretch>
                  </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>40</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>40</height>
+                 </size>
                 </property>
                 <property name="frameShape">
                  <enum>QFrame::StyledPanel</enum>
@@ -929,7 +977,31 @@ color: #F1F1F1;
                 <property name="frameShadow">
                  <enum>QFrame::Raised</enum>
                 </property>
-                <layout class="QGridLayout" name="gridLayout_3"/>
+                <layout class="QHBoxLayout" name="horizontalLayout_6">
+                 <item>
+                  <widget class="QPushButton" name="pushButton_7">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Fixed" vsizetype="MinimumExpanding">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="text">
+                    <string>Click here to reload!</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="../../Pictures/resources/rewources.qrc">
+                     <normaloff>:/icons/tabler_png/reload.png</normaloff>:/icons/tabler_png/reload.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
                </widget>
               </item>
              </layout>
@@ -1152,15 +1224,52 @@ color: #F1F1F1;
           <enum>QFrame::Raised</enum>
          </property>
          <layout class="QGridLayout" name="gridLayout">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
           <property name="topMargin">
            <number>0</number>
           </property>
           <property name="rightMargin">
            <number>0</number>
           </property>
-          <property name="verticalSpacing">
-           <number>-1</number>
+          <property name="bottomMargin">
+           <number>0</number>
           </property>
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_5">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>15</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>10000</width>
+              <height>15</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Nova_Flat</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>   © 2023 k2kt All right reserved.</string>
+            </property>
+           </widget>
+          </item>
          </layout>
         </widget>
        </item>
